@@ -3,7 +3,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef, useState, useEffect } from "react";
 import { Sparkles, ShoppingCart, Zap, Timer, ArrowRight, Wand2, CheckCircle2, Image as ImageIcon } from "lucide-react";
 
-export default function ProductShotOS() {
+export default function App() {
   const containerRef = useRef(null);
   const { scrollYProgress } = useScroll({ target: containerRef, offset: ["start end", "end start"] });
   const bgColor = useTransform(scrollYProgress,[0, 0.25, 0.5, 0.75, 1],["#F9FAFB", "#F3F4F6", "#E5E7EB", "#D1D5DB", "#E5E7EB"]);
